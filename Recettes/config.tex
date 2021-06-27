@@ -1,0 +1,56 @@
+\usepackage[top=0.5cm,bottom=1.2cm,left=0.75cm,right=0.75cm]{geometry}
+\parindent0pt %désactiver indentation automatique
+
+\author{\centerline{Harter Louis-Max, T5G1}}
+\date{\today}
+\setlength{\droptitle}{-10em}
+\renewcommand{\arraystretch}{1.2}
+%\pagestyle{}
+
+\usepackage[toc]{multitoc}
+\renewcommand*{\multicolumntoc}{2}
+\setlength{\columnseprule}{1pt}
+
+\newcommand{\labelled}[1]{%
+	\tikz[baseline]\node[anchor=base,draw=black!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+
+%réglage des sections
+%titleformat{command}[shape]{format}{label}{sep}{before}[after]
+\usepackage[calcwidth]{titlesec}
+
+\titleformat{\section}[block]
+    {\large\bfseries}
+    {\thetitle.}{.5em}{}
+\titleformat{\subsection}[runin]
+    {\bfseries}
+    {\thetitle.}{.5em}{}
+\titleformat{\subsubsection}[runin]
+    {\bfseries}
+    {\thetitle.}{.5em}{}
+    [\hspace{0.3cm}~]
+    
+%fonctionne pas encore :)
+\newcounter{nomrecette}
+\titleclass{\nomrecette}{straight}[\chapter]
+\titleformat{\nomrecette}[runin]
+	{\bfseries}
+	{}{.5em}{}
+    
+
+%espaçage : gauche, avant, après, droite
+\titlespacing{\section}      {0pt}{0.8ex}{0.7ex}
+\titlespacing*{\subsection}   {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing{\subsubsection}{0pt}{0.7ex}{0.7ex}
+\titlespacing{\nomrecette}   {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%réglage des captions
+\usepackage[figurename=]{caption}
+\captionsetup[figure]{font=small,labelfont=small}
+
+%espace après wrapfigure
+\setlength\intextsep{4pt}
+
+%\usepackage{showframe}
+%\usepackage{lua-visual-debug}
+
+

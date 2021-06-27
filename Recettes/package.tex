@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage[fontsize=12]{scrextend}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+
+%tmp
+\usepackage{blindtext} 
+\usepackage{multicol} %plusieurs colonnes
+\usepackage{eurosym} %euro
+\usepackage{framed}
+\usepackage{titletoc} 
+\usepackage[export]{adjustbox} %min width
+\usepackage{easyfig} %figures
+
+%commandes perso
+\usepackage{mathtools} %pour paireddelimiter
+\usepackage{stmaryrd}  %pour \llbracket
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\ii}{\llbracket}{\rrbracket}
+\DeclarePairedDelimiter{\ie}{\llbracket}{\llbracket}
+\DeclarePairedDelimiter{\ei}{\rrbracket}{\rrbracket}
+\DeclarePairedDelimiter{\ee}{\rrbracket}{\llbracket}
+
+%utilitaire
+\usepackage{embedfile} %joindre les fichiers source au pdf
+\usepackage{datetime}  %la date
+\usepackage{xargs}     %fonction avec plusieurs paramètres facultatifs 
+\usepackage{lipsum}    %générateur de text
+%\usepackage{tgbonum}   %font
+
+%pied de page 
+\usepackage{fancyhdr}  %pied de page
+\setlength{\headheight}{13pt}
+\usepackage{lastpage}  %numéro de la dernière page
+
+%Packages Mise en page
+\usepackage{babel}     %footnote et traductions
+\usepackage{tabto}     %faire des tabulation
+\usepackage{titling}   %gérer la position du titre
+\usepackage{setspace}  %double espaces
+\usepackage{changepage}%régler les blocs des sections
+\usepackage[pdfencoding=auto, psdextra, hidelinks]{hyperref}%hyperlink
+\usepackage{cleveref}  %reférence pour lemme et thm
+\makeatletter          %éviter les erreurs pour les liens hyperef et le mode math
+\pdfstringdefDisableCommands{\let\HyPsd@CatcodeWarning\@gobble}
+\makeatother
+
+%surligner et couleurs
+%\usepackage{colortbl}  %dans un tableau
+\usepackage{color}     %couleurs
+\usepackage{soul}      %surligner
+%\usepackage[table]{xcolor}%couleurs
+\usepackage{xcolor}%couleurs
+\usepackage{soulutf8}  %surligner avec utf8
+
+%Packages mathématiques
+\usepackage{amsfonts}  %police d'écriture
+\usepackage{amsmath}   %Equations
+\usepackage{amsthm}    %théoreme
+\usepackage{amssymb}   %symboles
+\usepackage{mathrsfs}  %police
+\usepackage{pifont}    %police d'écriture
+\usepackage{subcaption}%sous-légende
+\usepackage{textcomp}  %écrire les +_ (\textpm)
+\usepackage{txfonts}   %coeur
+
+%Théorème lemme preuves etc
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollaire}[theorem]{Corollaire}
+\newtheorem{definition}[theorem]{Définition}
+\newtheorem{exemple}[theorem]{Exemple}
+\newtheorem{hypo}[theorem]{Hypothèse}
+\newtheorem{lemme}[theorem]{Lemme}
+\newtheorem{methode}[theorem]{Méthode}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{propriete}[theorem]{Propriété}
+\newtheorem{prop}{Proposition}
+\newtheorem{remarque}[theorem]{Remarque}
+\newtheorem{reponse}[theorem]{Réponse}
+\newtheorem{theoreme}[theorem]{Théorème}
+\theoremstyle{definition}
+
+%Packages Tableaux
+\usepackage{array}    %Tableaux maths
+\usepackage{arydshln} %Lignes en pointillés
+\usepackage{fancybox} %Boites
+\usepackage{fancybox} %encadrage
+\usepackage{multicol} %Colonnes
+\usepackage{multirow} %Gestion des lignes
+\usepackage{outlines} %itemize avec profondeur
+%A désactiver, bug lignes pas jointifs sur les tableaux
+%\usepackage{tabularx} %Tableaux
+%\usepackage{nicematrix}%faire des tableau avec des blocs plus facilement
+
+%Packages Figures et graphiques
+\usepackage{authblk}  %footnote et auteurs
+\usepackage{graphics} %inclusion de figures
+\usepackage{graphicx} %inclusion de figures
+\usepackage{pgfplots} %plot
+\usepackage{pgf}	  %images 
+\usepackage{placeins} %eviter que les images soit trop décalés
+\usepackage{pstricks,pst-node} %Graphiques
+\usepackage{tikz}     %Tikz <3
+\usepackage{wrapfig}  %figure avec texte à coté
+
+\usepackage[figurename=]{caption} %réglage des captions
+\captionsetup{justification=centering}
+%\captionsetup[figure]{font=small,labelfont=small,labelformat=dash}
+\setlength\intextsep{4pt}         %espace après wrapfigure
+\setlength{\columnseprule}{1pt}   %ligne entre deux colonnes
+
+%tikz
+\pgfplotsset{compat=1.17}

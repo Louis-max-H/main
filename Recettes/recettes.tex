@@ -1,0 +1,311 @@
+\newcommand{\includeFile}[1]{\input{#1}\embedfile{#1}}
+\includeFile{package}
+\includeFile{config}
+
+%nom, note, balises
+\newenvironment{recette}[2]
+{\begin{framed}\begin{minipage}{0.95\linewidth}\subsection{#1} : \foreach \l in {#2}{\labelled{\l}}\\}
+		{\end{minipage}\end{framed}}
+%21x29.7
+
+\newcommand{\heart}{\ensuremath\varheartsuit\hspace{0.2cm}}
+
+\begin{document}
+	\setkeys{Gin}{%
+		max width=20cm,%
+		min width=4cm,%
+		min height=4cm,%
+		max height=7cm%
+	}
+	\newcommandx\cadre[4][1=20cm,2=4cm, usedefault]{(#2_{#1},\ldots,#2_{#3})}
+	
+	Salut ! Voici la liste des recettes que j'ai bien aimées.
+	\\Bien sûre elle est amenée à changer,
+	\\N'hésitez pas à me contacter pour la compléter, en rajouter ou simplement dire bonjour, c'est toujours avec plaisir d'en discuter !
+	\tableofcontents
+	
+	\newpage
+	\section{Plats}
+	\begin{recette}{Blinis}{}
+		\Figure[here, height=5cm]{./images/blinis.png}
+	\end{recette}
+	
+	\begin{recette}{\heart Boulette pois chiches et fromage}{veggie}
+		Des bonnes boulettes de pois chiches et au fromage.
+		\Figure[here]{./images/brochettes veggie fromage.png}
+	\end{recette}
+	
+	\begin{recette}{\heart cake chèvre raisons noisettes}{entrée, Sucré salé}
+		\Figure[here]{./images/cake chèvre raisons noisettes.png}
+	\end{recette}
+	
+	\begin{recette}{canellonis epinars ricotta}{}
+		\Figure[here]{./images/canellonis epinars ricotta.png}
+	\end{recette}
+	
+	\begin{recette}{chou et carottes}{salade}
+		\Figure[here]{./images/chou et carottes.png}
+	\end{recette}
+	
+	\begin{recette}{crème poivrons}{tartinade}
+		\Figure[here]{./images/crème poivrons.png}
+	\end{recette}
+	
+	\begin{recette}{\heart couscous}{veggie}
+		Recette de mon enfance,
+		\Figure[here]{./images/couscous.png}
+	\end{recette}
+	
+	
+	\begin{recette}{\heart crumble légumes}{veggie}
+		Un plat complet et gourmand ! 
+		\Figure[here]{./images/crumble légumes.png}
+	\end{recette}
+	
+	\begin{recette}{encornet de séche}{}
+		\Figure[here, scale=0.9]{./images/encornet de séche.png}
+	\end{recette}
+	
+	\begin{recette}{houmous}{entrée}
+		\Figure[here, scale=0.9]{./images/houmous.png}
+	\end{recette}
+	
+	\begin{recette}{feuileté comté jambon}{}
+		\Figure[here]{./images/feuileté comté jambon.png}
+	\end{recette}
+	
+	\begin{recette}{\heart galettes patates douces}{sucré salé, entrée}
+		ça ce mange sans fin, plutôt en accompagnement
+		\Figure[here, scale=0.85]{./images/galettes patates douces .png}
+	\end{recette}
+	
+	\begin{recette}{gratin au potimarron}{}
+		\Figure[here, scale=0.8]{./images/gratin au potimarron.png}
+	\end{recette}
+	
+	\begin{recette}{\heart Soupe carottes coco}{}
+		Une soupe très douce et avec une belle couleur.
+		\Figure[here]{./images/lentilles corailles.png}
+	\end{recette}
+	
+	\begin{recette}{macaronis and cheese}{}
+		\Figure[here]{./images/macaronis and cheese.png}
+	\end{recette}
+	
+	\begin{recette}{mini cake chevre}{entrée}
+		\Figure[here]{./images/mini cake chevre.png}
+	\end{recette}
+	
+	\begin{recette}{muffins mais guacamole}{}
+		Parfait en entrée ou pour accompagner un Chilli sin carne
+		\Figure[here]{./images/muffins mais guacamole.png}
+	\end{recette}
+	
+	\begin{recette}{patidou cocotte}{simple}
+		\Figure[here]{./images/patidou cocotte.png}
+	\end{recette}
+	
+	\begin{recette}{poulet}{}
+		\Figure[here]{./images/poulet.png}
+	\end{recette}
+	
+	\begin{recette}{poulet sauté au miel}{}
+		\Figure[here]{./images/poulet sauté au miel.png}
+	\end{recette}
+	
+	\begin{recette}{risotto}{fête}
+		\Figure[here, scale=0.9]{./images/risotto.png}
+	\end{recette}
+	
+	\begin{recette}{riz coco}{}
+		\Figure[here]{./images/riz coco.png}
+	\end{recette}
+	
+	\begin{recette}{roulés chorizo}{entrée}
+		\Figure[here]{./images/roulés chorizo.png}
+	\end{recette}
+	
+	\begin{recette}{\heart salade céleri raisins}{}
+		Salade fraiche, peu être rajouter un sauce salade avec ? Je suis preneur si vous en connaissez une !
+		\Figure[here]{./images/salade céleri raisons.png}
+	\end{recette}
+	
+	\begin{recette}{salade courgette thon}{}
+		Peu être servi en entrée, c'est bien frais et originale 
+		\Figure[here, scale=0.8]{./images/salade courgette thon.png}
+	\end{recette}
+	
+	\begin{recette}{sauces}{}
+		J'ai pas testé,
+		\Figure[here, scale=0.8]{./images/sauces.png}
+	\end{recette}
+	
+	\begin{recette}{soupe carottes coco}{soupe}
+		\Figure[here, scale=0.8]{./images/soupe carottes coco.png}
+	\end{recette}
+	
+	\begin{recette}{soupe épicée aux panais}{soupe}
+		\Figure[here, scale=0.8]{./images/soupe épicée aux panais.png}
+	\end{recette}
+	
+	\begin{recette}{tagiatelles aux crevettes et aux poivrons}{}
+		\Figure[here, scale=0.8]{./images/tagiatelles aux crevettes et aux poivrons.png}
+	\end{recette}
+	
+	\begin{recette}{tomates provencales}{}
+		\Figure[here, scale = 0.8]{./images/tomates provencales.png}
+	\end{recette}
+	
+	\begin{recette}{purée courge butternut au curry}{}
+		\Figure[here, scale=0.8]{./images/purée courge butternut au curry.png}
+	\end{recette}
+	
+	\begin{recette}{\heart tourte champignons}{}
+		Champignons fromage, très bon mais peu pratique pour manger en extérieur 
+		\Figure[here]{./images/tourte champignons.png}
+	\end{recette}
+	
+	\begin{recette}{veloute patate douce carotte chevre}{soupe}
+		\Figure[here, scale=0.9]{./images/veloute patate douce carotte chevre.png}
+	\end{recette}
+	
+	
+	\newpage
+	\vfill
+	\section{Desserts}
+	\vfill
+	\newpage
+	\begin{recette}{\heart barfi toto}{}
+		Semoule aux épices (cardamome), très facile et gourmand.
+		\Figure[here, scale=0.8]{./images/barfi toto.png}
+	\end{recette}
+	
+	\begin{recette}{\heart bouchées nutell manue}{}
+		\Figure[here, scale=0.8]{./images/bouchées nutell manue.png}
+	\end{recette}
+	
+	\begin{recette}{\heart carot pie}{}
+		Je suis preneur pour une bonne recette de glaçage, celui-ci doit rester bien frais 
+		\Figure[here]{./images/carot pie.png}
+	\end{recette}
+	
+	\begin{recette}{cheesecake}{}
+		\Figure[here]{./images/cheesecake.png}
+	\end{recette}
+	
+	\begin{recette}{\heart flans mexican}{}
+		Il est encore meilleur si vous le faite la veille. Ne pas trop le faire cuire pour garder le milieux moelleux.
+		\Figure[here]{./images/flans mexican.png}
+	\end{recette}
+	
+	\begin{recette}{gateau chocolat patates douces}{}
+		Un peu lourd
+		\Figure[here]{./images/gateau chocolat patates douces.png}
+	\end{recette}
+	
+	\begin{recette}{gateau yaourt}{}
+		\Figure[here]{./images/gateau yaourt.png}
+	\end{recette}
+	
+	\begin{recette}{gaufres2}{}
+		\Figure[here]{./images/gaufres2.png}
+	\end{recette}
+	
+	\begin{recette}{gaufres}{}
+		\Figure[here, scale=0.8]{./images/gaufres.png}
+	\end{recette}
+	
+	\begin{recette}{glace bananes}{glace}
+		\Figure[here, scale=0.8]{./images/glace bananes.png}
+	\end{recette}
+	
+	\begin{recette}{glace framboise}{glace}
+		\Figure[here]{./images/glace framboise.png}
+	\end{recette}
+	
+	\begin{recette}{glace spéculos}{glace}
+		\Figure[here]{./images/glace spéculos.png}
+	\end{recette}
+	
+	\begin{recette}{\heart grand mi biscuit}{Grand Mi}
+		Recette d'arrière grand mère, un bon gâteau a manger avec de la confiture. 
+		\Figure[here]{./images/grand mi biscuit.png}
+	\end{recette}
+	
+	\begin{recette}{grand mi mousse choco}{Grand Mi}
+		Difficile à réaliser et beaucoup de beurre, 
+		\Figure[here]{./images/grand mi mousse choco.png}
+	\end{recette}
+	
+	\begin{recette}{meilleur muffins monde}{}
+		\Figure[here]{./images/meilleur muffins monde.png}
+	\end{recette}
+	
+	\begin{recette}{moelleux au citron et pavot bleu}{}
+		\Figure[here]{./images/moelleux au citron et pavot bleu.png}
+	\end{recette}
+	
+	\begin{recette}{\heart Flan gourmand}{jaunes oeuf}
+		Vous pouvez faire des financiers avec les blancs restant. Merci à Benard et à Mathias.
+		\\Vous pouvez remplacer la fécule de pomme de terre par de la maïzena, pensez à faire \textbf{crème pâtissière la veille} pour la laisser refroidir (ou mettre au frigo).
+		\\Pensez à démouler le flan une fois froid, sinon il est encore un peu liquide.\medskip
+		\\\textbf{\url{https://www.lacuisinedebernard.com/2011/07/le-flan-parisien.html}}
+		\Figure[here, scale=0.5]{./images/flan bernard.png}
+	\end{recette}
+	
+	\begin{recette}{\heart cookies aux flocons d'avoine.}{}
+		\Figure[here]{./images/cookird aux flocons d'avoine.png}
+	\end{recette}
+	
+	\begin{recette}{\heart financiers aux amandes}{blancs oeuf}
+		A faire après la recette de flan de Bernard
+		\Figure[here]{./images/financiers aux amandes.png}
+	\end{recette}
+	
+	\begin{recette}{moelleux aux pommes}{}
+		\Figure[here]{./images/moelleux aux pommes.png}
+	\end{recette}
+	
+	\begin{recette}{moelleux tata}{}
+		\Figure[here]{./images/moelleuxbtata.png}
+	\end{recette}
+
+	\begin{recette}{tarte amandine aux poires}{}
+		\Figure[here]{./images/tarte amandine aux poires.png}
+	\end{recette}
+	
+	\begin{recette}{\heart pancakes}{}
+		Des pancakes bien moelleux, notre top1 dans le domaine.
+		\Figure[here, scale=1.1]{./images/pancakes.png}
+	\end{recette}
+	
+	\begin{recette}{muffins au chocolat blanc}{}
+		\Figure[here, scale=0.8]{./images/muffins au chocolat blanc.png}
+	\end{recette}
+	
+	\begin{recette}{pumpkin pie}{}
+		\Figure[here]{./images/pumpkin pie.png}
+	\end{recette}
+	
+	\begin{recette}{tartelettes chèvre crumble}{}
+		\Figure[here, scale=0.9]{./images/tartelettes chèvre crumble.png}
+	\end{recette}
+	
+	\begin{recette}{\heart tiramisu myrtilles amandes}{}
+		A faire la veille, super quand on invite du monde !
+		\Figure[here, scale=0.75]{./images/tiramisu myrtilles amandes.png}
+	\end{recette}
+	
+	\begin{recette}{vermicelle}{}
+		La cardamone rappelle la recette du Barfi
+		\Figure[here, scale=0.8]{./images/vermicelle.png}
+	\end{recette}
+	
+	\begin{recette}{moquecade peixe e camarao}{}
+		Aucune idée, mais ça à l'air sympa
+		\Figure[here, scale=0.7]{./images/moquecade peixe e camarao.png}
+	\end{recette}
+	
+	
+	
+\end{document}
