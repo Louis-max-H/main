@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[top=1cm,bottom=1.5cm,left=1cm,right=1cm]{geometry}
+\usepackage[french]{babel}
+
+\usepackage{helvet}               %police d'écriture
+\moderncvstyle{classic}           %casual, classic, oldstyle, banking
+\moderncvcolor{orange}            %blue, orange, green, red, purple, grey, black
+\setlength{\hintscolumnwidth}{2cm}%largeur colonnes
+
+\colorlet{body}{black!80!white}
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+
+%données perso
+\name{Louis-Max}{\newline Harter}
+\address{56 rue Marquis}{76100 Rouen}{France}
+\phone[fixed ]{02.32.18.68.67}
+\phone[mobile]{07.83.86.83.61}
+\email{louis-max.harter@protonmail.com}
+\social[github]{louis-max-h}
+\usepackage{fontawesome5}
+\extrainfo{\faMusic{} deezer.com/profile/4350726442\\\faDiscord{} louis-max\#8886}
+\photo[100pt][0.4pt]{pp.png} %taille, cadre, image
+
+\begin{document}
+\makecvtitle
+
+\section{Formation}
+\cventry{2018--2021}{Lycée Blaise Pascal}{Rouen}{}{}{
+    \cvtag{Classe Euro}
+    \cvtag{DNL Physique}
+    \cvtag{Math expertes}
+    \cvtag{Physique Chimie}
+    \cvtag{NSI}
+    \cvtag{Espagnol}\smallskip
+    \\Membre organisateur des écos-délégués et du Conseil de Vie lycéenne.
+}
+
+\section{Concours}
+%\cventry[spacing]{years}{job title}{institution}{localisation}{optionnal:grade}{optional:description}
+\cventry{2021}{$\mathbf{ITYM}$}{International Tournament of Young Mathematicians}{}{}{
+    \cvtag{2021 - Sélectionné}
+}
+\cventry{2019--2021}{$\mathbf{TFJM}^2$}{Tournois Français des Jeunes Mathématiciennes et Mathématiciens}{}{}{
+    \cvtag{2021 - $1$\textsuperscript{er}}
+    \cvtag{2020 - Prix du Jury}
+}
+\cventry{2020--2021}{BattleDev}{Concours d'informatique}{}{}{
+    \cvtag{2021 - $129/5000$}
+    \cvtag{2020 - $203/4600$}
+}
+\cventry{2018--2020}{Algoréa}{Concours d'algorithmique}{}{}{
+    \cvtag{2020 - $96\%$}
+    \cvtag{2018 - $4$\textsuperscript{ème}}
+}
+\cventry{2020--2021}{Prologin}{Concours national d'informatique}{}{}{
+    \cvtag{2020 - $25$\textsuperscript{ème} à la finale d'Epita}
+}
+\cventry{2018--2019}{Alkindi}{Concours de cryptographie}{}{}{
+    \cvtag{2019 - Finaliste}
+}
+\cventry{2019}{Robotique}{Concours de science de l'ingénieur à Blaise Pascal}{}{}{
+    \cvtag{$1$\textsuperscript{er}}
+}
+
+\section{Activités}
+\cventry{2012--2021}{Escalade}{Club Alpin Français}{}{}{
+    Grimpeur et Encadrant bénévole depuis 2019, Diplomé du SAE
+}
+\cventry{2012--2021}{Scoutisme}{Éclaireuses et Éclaireurs unionistes de France}{}{}{
+    Membre investi, spécialisation Froissartage et Cuisinier
+}
+\cventry{2019--2021}{Hacker Space}{}{}{}{
+    Centre de partage et d'apprentissage concernant l'informatique
+}
+
+\section{Compétences informatiques}
+\cvdoubleitem{Python}{Programmation objet}{France IOI}{Niveau 6}
+\cvdoubleitem{\LaTeX}{Sans problème}{Wolfram}{Programmation fonctionnel}
+\cvdoubleitem{HTML/CSS}{Pour petit projet}{C++}{Pour Arduino}\medskip
+\cvitem{Linux}{Debian LXDE, Kubuntu puis Manjaro, utilisateur épanoui et un peu trop curieux ...}
+
+
+\end{document}
