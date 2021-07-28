@@ -1,0 +1,53 @@
+\definecolor{lightblue}{rgb}{0.145,0.6666,1} %Defines the color used for content box headers
+
+\setkeys[ba]{poster}{%poster
+	%couleurs
+	bgColorOne=white,   %fond dégradé gauche de l'affiche
+	bgColorTwo=white,   %fond dégradé droit  de l'affiche
+	background=none,    %
+	columns=6,          %
+	%espaces
+	colspacing=3mm,     %espace entre les boites
+	headerheight=0.075\textheight, %hauteur de l'en-tête
+	eyecatcher=true     %false pour supprimer le logo de gauche	
+}
+
+\setkeys[ba]{posterbox}{%boites
+	%couleurs
+	headerColorOne=gray!70,   %fond dégradé gauche en-tête
+	headerColorTwo=lightblue, %fond dégradé droite en-tête 
+	borderColor=lightblue,    %bordures de cadres
+	boxColorOne=gray!10,      %fond des boites
+	headerFontColor=white,    %texte en-tête boites
+	%bordures			
+	headerborder=open,        %entête : none, closed ou open
+	headershape=roundedright, %entête : rectangle, small-rounded, roundedright, roundedleft or rounded
+	textborder=roundedleft,   %boites : none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright, faded
+	headerfont=\textsc\bf,    %Police en tête 
+	textfont={\setlength{\parindent}{0em}}, %Indentation
+	linewidth=2pt      %largeur du filet des boites boxes
+}
+
+
+
+%basique
+\renewcommand{\arraystretch}{1.2}
+
+%réglage des sections
+%titleformat{command}[shape]{format}{label}{sep}{before}[after]
+\usepackage[calcwidth]{titlesec}
+\titleformat{\section}[block]
+{\large\bfseries}
+{\thetitle.}{.5em}{}
+\titleformat{\subsection}
+{\bfseries}
+{\thetitle.}{.5em}{}
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{\thetitle.}{.5em}{}
+[\hspace{0.3cm}~]
+
+%espaçage : gauche, avant, après, droite
+\titlespacing{\section}      {0pt}{0.8ex}{0.7ex}
+\titlespacing{\subsection}   {0pt}{0.7ex}{0.7ex}
+\titlespacing{\subsubsection}{0pt}{0.7ex}{0.7ex}

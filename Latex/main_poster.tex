@@ -1,0 +1,11 @@
+\documentclass[a0paper,fontscale=0.285]{baposter}
+
+\newcommand{\includeFile}[1]{\input{#1}\embedfile{#1}}
+\includeFile{config/package}
+\includeFile{config/config_baposter}
+
+\begin{document}
+	\includeFile{config/config_tikz}    
+	\includeFile{Demo/exemple_poster}
+\end{document}
+

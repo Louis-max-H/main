@@ -1,0 +1,106 @@
+\usepackage[fontsize=14]{scrextend}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+
+%utilitaire
+\usepackage{
+	embedfile,             %joindre les fichiers source au pdf
+	datetime,              %la date
+	xargs,                 %fonction avec plusieurs paramètres facultatifs 
+	environ,               %création de nouveaux environnements
+	lipsum,                %générateur de text
+	blindtext,             %générateur de text avancé
+	eurosym                %symboles euros
+}
+
+%Packages mathématiques
+\usepackage{
+	mathtools,              %pour paireddelimiter
+	stmaryrd,               %pour \llbracket
+	amsfonts,               %police d'écriture
+	amsmath,                %Equations
+	amssymb,                %symboles
+	mathrsfs,               %police
+	pifont,                 %police d'écriture
+	subcaption,             %sous-légende
+	textcomp                %écrire les +_ (\textpm)
+}
+
+%Packages Tableaux
+\usepackage{
+	array,                  %Tableaux maths
+	arydshln,               %Lignes en pointillés
+	fancybox,               %Boites
+	fancybox,               %encadrage
+	multicol,               %Colonnes
+	multirow,               %Gestion des lignes
+	outlines                %itemize avec profondeur
+}
+
+%Packages Figures et graphiques
+\usepackage{
+	authblk,                %footnote et auteurs
+	graphics,               %inclusion de figures
+	graphicx,               %inclusion de figures
+	pgfplots,               %plot
+	pgf,                    %images 
+	placeins,               %eviter que les images soit trop décalés
+	pstricks,               %Graphiques
+	tikz,                   %Tikz <3
+	wrapfig,                %figure avec texte à coté
+	pst-node                %Graphiques
+}
+
+%Packages Mise en page
+\usepackage{
+	babel,                 %footnote et traductions
+	tabto,                 %faire des tabulation
+	titling,               %gérer la position du titre
+	setspace,              %double espaces
+	changepage,            %régler les blocs des sections
+	multicol               %double colonnes
+}
+
+%bug pendant les diapos
+%\usepackage[pdfencoding=auto, psdextra, hidelinks]{hyperref} %hyperlink
+%\usepackage{cleveref}    %reférence pour lemme et thm
+%\makeatletter            %éviter les erreurs pour les liens hyperef et le mode math
+%\pdfstringdefDisableCommands{\let\HyPsd@CatcodeWarning\@gobble}
+%\makeatother
+
+%surligner et couleurs
+\usepackage{color}        %couleurs
+\usepackage{soul}         %surligner
+\usepackage{soulutf8}     %surligner avec utf8
+\usepackage{xcolor}       %couleurs
+%\usepackage{xcolor}      %couleurs
+%\usepackage{colortbl}    %dans un tableau
+
+%pied de page 
+\usepackage{
+	fancyhdr,               %pied de page
+	lastpage                %numéro de la dernière page
+}
+\setlength{\headheight}{13pt}
+
+\usepackage[figurename=]{caption}   %réglage des captions
+\captionsetup{justification=centering, font=small,labelfont=small}
+\setlength\intextsep{4pt}           %espace après wrapfigure
+\setlength{\columnseprule}{1pt}     %ligne entre deux colonnes
+
+%tikz
+\pgfplotsset{compat=1.17}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%fin importations%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%commandes perso
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\ii}{\llbracket}{\rrbracket}
+\DeclarePairedDelimiter{\ie}{\llbracket}{\llbracket}
+\DeclarePairedDelimiter{\ei}{\rrbracket}{\rrbracket}
+\DeclarePairedDelimiter{\ee}{\rrbracket}{\llbracket}

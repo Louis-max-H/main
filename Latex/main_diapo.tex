@@ -1,0 +1,11 @@
+\documentclass{beamer}
+
+\newcommand{\includeFile}[1]{\input{#1}\embedfile{#1}}
+\includeFile{config/package_diapo}
+\includeFile{config/config_diapo}
+
+\begin{document}
+	\includeFile{config/config_tikz}    
+	\includeFile{Demo/exemple_diapo}
+\end{document}
+

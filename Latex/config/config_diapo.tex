@@ -1,0 +1,76 @@
+\parindent0pt %désactiver indentation automatique
+
+%pour le diapo
+\usetheme{CambridgeUS}
+\usecolortheme{spruce}
+\setbeamercovered{dynamic}
+
+\definecolor{vert1}{HTML}{6aaa14}
+\definecolor{vert}{HTML}{62990f}
+
+\setbeamertemplate{blocks}[rounded]
+\setbeamercolor{frametitle}{bg=vert!15!white, fg=vert}
+\setbeamercolor{block title}{fg=vert1}
+\setbeamercolor{author in head/foot}{bg=vert, fg=black}
+\setbeamercolor{title in head/foot} {bg=vert!50!white, fg=vert!20!black}
+\setbeamercolor{date in head/foot}  {bg=vert!15!white, fg=vert!40!black}
+\setbeamercolor{title}{fg=black}
+
+\setbeamercolor{caption name}{fg=structure!70!black}
+\setbeamertemplate{headline}{
+	\begin{beamercolorbox}[wd=\paperwidth,ht=1ex,dp=0ex]{author in head/foot}
+		\usebeamerfont{author in head/foot}
+	\end{beamercolorbox}
+}
+
+%afficher pied de diapo
+\newcommand{\setDefaultFootline}[0]{
+	\setbeamertemplate{footline}{
+		\leavevmode\hbox{%
+			\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+				\usebeamerfont{author in head/foot}\insertsection
+			\end{beamercolorbox}%
+			\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+				\usebeamerfont{title in head/foot}\insertsubsection
+			\end{beamercolorbox}%
+			\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+				\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+				\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+			\end{beamercolorbox}
+		}
+		\vskip0pt%
+	}
+}\setDefaultFootline
+
+%cacher pied de diapo
+\newcommand{\setSmallFootline}[0]{
+	\setbeamertemplate{footline}{
+		\leavevmode\hbox{%
+			\begin{beamercolorbox}[wd=.333333\paperwidth,ht=0.75ex,dp=0ex]{author in head/foot}%
+				\usebeamerfont{author in head/foot}
+			\end{beamercolorbox}%
+			\begin{beamercolorbox}[wd=.333333\paperwidth,ht=0.75ex,dp=0ex]{title in head/foot}%
+				\usebeamerfont{title in head/foot}
+			\end{beamercolorbox}%
+			\begin{beamercolorbox}[wd=.333333\paperwidth,ht=0.75ex,dp=0ex]{date in head/foot}%
+				\usebeamerfont{date in head/foot}
+			\end{beamercolorbox}
+		}
+		\vskip0pt%
+	}
+}
+
+%afficher les icons de navigation
+\newcommand{\resetNavigationSymbols}[]{
+	\setbeamertemplate{navigation symbols}{%
+		\insertslidenavigationsymbol%
+		\insertframenavigationsymbol%
+		\insertsubsectionnavigationsymbol%
+		\insertsectionnavigationsymbol%
+		\insertdocnavigationsymbol%
+		\insertbackfindforwardnavigationsymbol%
+	}
+}\resetNavigationSymbols{}
+
+%cacher les icons de navigation
+%\setbeamertemplate{navigation symbols}{}

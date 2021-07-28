@@ -1,0 +1,37 @@
+\usepackage[top=1cm,bottom=1.5cm,left=1cm,right=1cm]{geometry}
+\parindent0pt %désactiver indentation automatique
+
+%doubler les interlignes
+%\linespread{2}
+
+\author{\centerline{Harter Louis-Max}}
+\date{\today}
+\setlength{\droptitle}{-10em}
+
+\renewcommand{\arraystretch}{1.2}
+
+%réglage des sections
+%titleformat{command}[shape]{format}{label}{sep}{before}[after]
+\usepackage[calcwidth]{titlesec}
+\titleformat{\section}[block]
+    {\large\bfseries}
+    {\thetitle.}{.5em}{}
+\titleformat{\subsection}
+    {\bfseries}
+    {\thetitle.}{.5em}{}
+\titleformat{\subsubsection}[runin]
+    {\bfseries}
+    {\thetitle.}{.5em}{}
+    [\hspace{0.3cm}~]
+
+%espaçage : gauche, avant, après, droite
+\titlespacing{\section}      {0pt}{0.8ex}{0.7ex}
+\titlespacing{\subsection}   {0pt}{0.7ex}{0.7ex}
+\titlespacing{\subsubsection}{0pt}{0.7ex}{0.7ex}
+
+%réglage des captions
+\usepackage[figurename=]{caption}
+\captionsetup[figure]{font=small,labelfont=small}
+
+%espace après wrapfigure
+\setlength\intextsep{4pt}

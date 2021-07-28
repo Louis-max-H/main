@@ -1,0 +1,74 @@
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\graphicspath{{images/}{../images/}}
+\parindent0pt %désactiver indentation automatique
+
+\author{
+    \centerline{Lycée Blaise Pascal et lycée Fénelon, Normandie}
+    \centerline{Composé de :}
+    \centerline{De Ridder Achille,}
+    \centerline{Harter Louis-Max,}
+    \centerline{Fourcin Emile}
+    \centerline{Quille Maxime}
+    \centerline{Encadrant :}
+    \centerline{Priscillia Sadou}
+}
+\date{\today}
+\renewcommand{\arraystretch}{1.2}
+
+%réglage des sections
+\usepackage[tiny]{titlesec}
+\titleformat{\section}
+    {\bfseries\Large}{\thesection}{1em}{}{}
+\titleformat{\subsection}
+    {\bfseries\large}{\thesubsection}{1em}{}{}
+\titleformat{\subsubsection}
+    {\bfseries}{\thesubsubsection}{1em}{}{}
+
+%espaçage : gauche, avant, après
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{1ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0.5ex}
+
+%tikz
+\definecolor{orangeAnimath}{RGB}{234,94,0}
+\definecolor{bleuAnimath}{RGB}{0,159,227}
+\definecolor{colorA}{HTML}{009fe3}%bleu
+\definecolor{colorB}{HTML}{23e700}%vert
+\definecolor{colorV}{HTML}{23e700}%vert
+\definecolor{colorC}{HTML}{EA5E00}%bleu
+\definecolor{colorD}{HTML}{c400e7}%violet
+\definecolor{colorE}{HTML}{1F2341}%bleu foncé
+\definecolor{colorX}{HTML}{FFFFFF}%blanc
+\definecolor{colorG}{gray}{0.6}   %gris clair
+\definecolor{colorg}{gray}{0.9}   %gris foncé
+\definecolor{colorR}{HTML}{FF0000}%rouge
+\newcommand{\nuance}{80}
+\newcommand{\blanc}{20}
+\colorlet{colorAlight}{colorA!\nuance!white!\blanc}
+\colorlet{colorBlight}{colorB!\nuance!white!\blanc}
+\colorlet{colorClight}{colorC!\nuance!white!\blanc}
+\colorlet{colorDlight}{colorD!\nuance!white!\blanc}
+\colorlet{colorElight}{colorE!\nuance!white!\blanc}
+\colorlet{colorRlight}{colorR!\nuance!white!\blanc}
+\colorlet{colorO}{orangeAnimath}
+%commande
+\newcommand{\nodeN}{\tikz{\draw[fill=bleuAnimath] (0,0) circle (.2cm);}}
+\newcommand{\nodeC}[1]{\tikz{\draw[fill=#1] (0,0) circle (.2cm);}}
+\newcommand{\nodeA}{\tikz{\draw[fill=white] (0,0) circle (.2cm);}}
+\newcommand{\nodeB}{\tikz{\draw[fill=black] (0,0) circle (.2cm);}}
+%config
+\tikzset{
+    %every picture/.append style={scale=3.5},
+    %every node/.style={scale=0.3},
+    %FlecheA/.style={#1, >=latex, colorA, line width=1pt},
+    %FlecheA/.default=->,
+    %Participant/.style= {circle, minimum size=1cm, draw=colorG},
+}
+
+%pied de page
+\renewcommand{\headrulewidth}{0.4pt}    %taille ligne haut
+\renewcommand{\footrulewidth}{0pt}      %taille ligne bas
+\lhead{Problème du $11^{eme}$ $\mathbb{TFJM}^2$}
+\rhead{Page \thepage/\pageref{LastPage}}
+\pagestyle{fancy}
+
